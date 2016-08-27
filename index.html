@@ -8,36 +8,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="layout-container">
-        <img src="img/logos/gllacy-shop.svg" width="154px" height="64px" alt="Глейси">
-        <nav>
+    <div class="layout-container">
+      <header class="main-header">
+        <div class="main-logo">
+          <img src="img/logos/gllacy-shop.svg" width="154px" height="64px" alt="Глейси">
+        </div>
+        <nav class="main-navigation">
           <ul>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
-        <ul>
+        <ul class="user-menu">
           <li><a href="#">Поиск</a></li>
           <li><a href="#">Вход</a></li>
           <li><span>Пусто</span></li>
         </ul>
+      </header>
+      <div class="work-details">
+        <time class="work-hours" datetime="PT10H">С 10 до 20, ежедневно</time>
+        <a class="work-phone-number" href="tel:88124502525">8 812 450-25-25</a>
       </div>
-    </header>
-
-    <div class="layout-container">
-      <div class="work-hours">С 10 до 20, ежедневно</div>
-    </div>
-
-    <div class="layout-container">
-      <div class="work-phone-number">8 812 450-25-25</div>
     </div>
 
     <div class="layout-container">
       <div class="slide">
         <p class="headline">Крем-брюле и пломбир с малиновым джемом</p>
-        <a href="#">Давайте оба!</a>
+        <a class="button" href="#">Давайте оба!</a>
       </div>
     </div>
 
@@ -49,7 +47,7 @@
             При покупке 2 кг любого фруктового мороженого, добавим
             в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a href="#">Хочу варенье!</a>
+          <a class="button" href="#">Хочу варенье!</a>
         </div>
       </div>
       <div class="layout-column-x2">
@@ -59,7 +57,7 @@
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a href="#">Хочу шоколадки!</a>
+          <a class="button" href="#">Хочу шоколадки!</a>
         </div>
       </div>
     </div>
@@ -92,32 +90,32 @@
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </div>
         </div>
-        <div class="layout-column-x1">
-          <div class="ice-cream">
-            <div class="ice-cream-preview">
-              <div class="ice-cream-preview-hit">хит</div>
-              <img src="img/ice-cream-3.png">
-              <div class="ice-cream-preview-price">
-                355 <span class="ruble">рублей</span> / кг
-              </div>
-            </div>
-            <div class="ice-cream-title">
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+      </div>
+      <div class="layout-column-x1">
+        <div class="ice-cream">
+          <div class="ice-cream-preview">
+            <div class="ice-cream-preview-hit">хит</div>
+            <img src="img/ice-cream-3.png">
+            <div class="ice-cream-preview-price">
+              355 <span class="ruble">рублей</span> / кг
             </div>
           </div>
+          <div class="ice-cream-title">
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </div>
         </div>
-        <div class="layout-column-x1">
-          <div class="ice-cream">
-            <div class="ice-cream-preview">
-              <div class="ice-cream-preview-hit">хит</div>
-              <img src="img/ice-cream-4.png">
-              <div class="ice-cream-preview-price">
-                415 <span class="ruble">рублей</span> / кг
-              </div>
+      </div>
+      <div class="layout-column-x1">
+        <div class="ice-cream">
+          <div class="ice-cream-preview">
+            <div class="ice-cream-preview-hit">хит</div>
+            <img src="img/ice-cream-4.png">
+            <div class="ice-cream-preview-price">
+              415 <span class="ruble">рублей</span> / кг
             </div>
-            <div class="ice-cream-title">
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-            </div>
+          </div>
+          <div class="ice-cream-title">
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
         </div>
       </div>
@@ -130,28 +128,32 @@
           собственного производства на развес
         </h2>
         <div class="layout-column-x2">
-          <p>
-            Все наше мороженое изготавливается на собственном производстве,
-            с использованием современного оборудования и проверенных временем
-            технологий.
-          </p>
-          <p>
-            Для приготовления мороженого используются настоящие сливки и молоко
-            высочайшего качества. Все дополнительные ингредиенты и добавки
-            произведены из натурального, экологически чистого сырья.
-          </p>
+          <ul>
+            <li>
+              Все наше мороженое изготавливается на собственном производстве,
+              с использованием современного оборудования и проверенных временем
+              технологий.
+            </li>
+            <li>
+              Для приготовления мороженого используются настоящие сливки и молоко
+              высочайшего качества. Все дополнительные ингредиенты и добавки
+              произведены из натурального, экологически чистого сырья.
+            </li>
+          </ul>
         </div>
         <div class="layout-column-x2">
-          <p>
-            Закупка ингредиентов производится только у проверенных фермерских
-            хозяйств и компаний, с которыми нас связывает долговременное
-            сотрудничество.
-          </p>
-          <p>
-            Доставка нашего мороженого до заказчиков осуществляется
-            в специальном термопакете, который не дает мороженому растаять
-            в пути и позволяет сохранить превосходный вкус.
-          </p>
+          <ul>
+            <li>
+              Закупка ингредиентов производится только у проверенных фермерских
+              хозяйств и компаний, с которыми нас связывает долговременное
+              сотрудничество.
+            </li>
+            <li>
+              Доставка нашего мороженого до заказчиков осуществляется
+              в специальном термопакете, который не дает мороженому растаять
+              в пути и позволяет сохранить превосходный вкус.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -173,7 +175,7 @@
             </p>
             <form method="post" action="https://echo.htmlacademy.ru">
               <input type="text" placeholder="Электронная почта">
-              <button type="submit">Отправить</button>
+              <button class="button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -189,36 +191,30 @@
           </p>
           <p>
             Для заказов по телефону:<br>
-            <span class="contacts-phone">8 812 450-25-25</span><br>
-            (c 10 до 20 ежедневно)
+            <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a><br>
+            <time datetime="PT10H">(c 10 до 20 ежедневно)</time>
           </p>
-          <button type="button">Форма обратной связи</button>
+          <a class="button" href="#">Форма обратной связи</a>
         </div>
       </div>
     </div>
 
-    <footer>
+    <footer class="main-footer">
       <div class="layout-container">
         <div class="layout-column-x1">
-          <div class="footer-social-buttons">
-            <a class="social-btn social-btn-twitter" href="#">Twitter</a>
-            <a class="social-btn social-btn-instagram" href="#">Instragram</a>
-            <a class="social-btn social-btn-facebook" href="#">Facebook</a>
-            <a class="social-btn social-btn-vkontakte" href="#">ВКонтакте</a>
+          <div class="footer-social-icons">
+            <a class="social-icon social-icon-twitter" href="#">Twitter</a>
+            <a class="social-icon social-icon-instagram" href="#">Instragram</a>
+            <a class="social-icon social-icon-facebook" href="#">Facebook</a>
+            <a class="social-icon social-icon-vkontakte" href="#">ВКонтакте</a>
           </div>
         </div>
-        <div class="layout-column-x1">
-          <div class="footer-links-1">
+        <div class="layout-column-x2">
+          <div class="footer-links">
             <ul>
               <li><a class="heart-icon" href="#">Для поставщиков</a></li>
-              <li><a href="#">О производстве</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="layout-column-x1">
-          <div class="footer-links-2">
-            <ul>
               <li><a href="#">Наши документы</a></li>
+              <li><a href="#">О производстве</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
           </div>
