@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="layout-container">
-        <div class="layout-column-x2">
+        <div class="layout-column layout-column-x2">
           <div class="main-logo">
             <img src="img/logos/gllacy-shop.svg" width="154px" height="64px" alt="Глейси">
           </div>
@@ -22,11 +22,11 @@
             </ul>
           </nav>
         </div>
-        <div class="layout-column-x2">
+        <div class="layout-column layout-column-x2">
           <ul class="user-menu">
             <li><a href="#">Поиск</a></li>
             <li><a href="#">Вход</a></li>
-            <li><span>Пусто</span></li>
+            <li><span class="icon-cart">Пусто</span></li>
           </ul>
           <div class="work-details">
             <time class="work-hours" datetime="PT10H">С 10 до 20, ежедневно</time>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="layout-container">
-      <div class="layout-column-x2">
+      <div class="layout-column layout-column-x2">
         <div class="banner banner-raspberry">
           <h2>Малинка даром!</h2>
           <p>
@@ -54,7 +54,7 @@
           <a class="button" href="#">Хочу варенье!</a>
         </div>
       </div>
-      <div class="layout-column-x2">
+      <div class="layout-column layout-column-x2">
         <div class="banner banner-chocolate">
           <h2>Шоколадки даром!</h2>
           <p>
@@ -67,12 +67,12 @@
     </div>
 
     <div class="layout-container">
-      <div class="layout-column-x1">
+      <div class="layout-column layout-column-x1">
         <div class="ice-cream">
-          <div class="ice-cream-preview">
-            <div class="ice-cream-preview-hit">хит</div>
+          <div class="ice-cream-content">
+            <div class="ice-cream-content-hit">хит</div>
             <img src="img/ice-cream-1.png">
-            <div class="ice-cream-preview-price">
+            <div class="ice-cream-content-price">
               310 <span class="ruble">рублей</span> / кг
             </div>
           </div>
@@ -81,12 +81,12 @@
           </div>
         </div>
       </div>
-      <div class="layout-column-x1">
+      <div class="layout-column layout-column-x1">
         <div class="ice-cream">
-          <div class="ice-cream-preview">
-            <div class="ice-cream-preview-hit">хит</div>
+          <div class="ice-cream-content">
+            <div class="ice-cream-content-hit">хит</div>
             <img src="img/ice-cream-2.png">
-            <div class="ice-cream-preview-price">
+            <div class="ice-cream-content-price">
               380 <span class="ruble">рублей</span> / кг
             </div>
           </div>
@@ -95,12 +95,12 @@
           </div>
         </div>
       </div>
-      <div class="layout-column-x1">
+      <div class="layout-column layout-column-x1">
         <div class="ice-cream">
-          <div class="ice-cream-preview">
-            <div class="ice-cream-preview-hit">хит</div>
+          <div class="ice-cream-content">
+            <div class="ice-cream-content-hit">хит</div>
             <img src="img/ice-cream-3.png">
-            <div class="ice-cream-preview-price">
+            <div class="ice-cream-content-price">
               355 <span class="ruble">рублей</span> / кг
             </div>
           </div>
@@ -109,12 +109,12 @@
           </div>
         </div>
       </div>
-      <div class="layout-column-x1">
+      <div class="layout-column layout-column-x1">
         <div class="ice-cream">
-          <div class="ice-cream-preview">
-            <div class="ice-cream-preview-hit">хит</div>
+          <div class="ice-cream-content">
+            <div class="ice-cream-content-hit">хит</div>
             <img src="img/ice-cream-4.png">
-            <div class="ice-cream-preview-price">
+            <div class="ice-cream-content-price">
               415 <span class="ruble">рублей</span> / кг
             </div>
           </div>
@@ -131,45 +131,39 @@
           Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
           собственного производства на развес
         </h2>
-        <div class="layout-column-x2">
-          <ul>
-            <li>
-              Все наше мороженое изготавливается на собственном производстве,
-              с использованием современного оборудования и проверенных временем
-              технологий.
-            </li>
-            <li>
-              Для приготовления мороженого используются настоящие сливки и молоко
-              высочайшего качества. Все дополнительные ингредиенты и добавки
-              произведены из натурального, экологически чистого сырья.
-            </li>
-          </ul>
-        </div>
-        <div class="layout-column-x2">
-          <ul>
-            <li>
-              Закупка ингредиентов производится только у проверенных фермерских
-              хозяйств и компаний, с которыми нас связывает долговременное
-              сотрудничество.
-            </li>
-            <li>
-              Доставка нашего мороженого до заказчиков осуществляется
-              в специальном термопакете, который не дает мороженому растаять
-              в пути и позволяет сохранить превосходный вкус.
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            Все наше мороженое изготавливается на собственном производстве,
+            с использованием современного оборудования и проверенных временем
+            технологий.
+          </li>
+          <li>
+            Для приготовления мороженого используются настоящие сливки и молоко
+            высочайшего качества. Все дополнительные ингредиенты и добавки
+            произведены из натурального, экологически чистого сырья.
+          </li>
+          <li>
+            Закупка ингредиентов производится только у проверенных фермерских
+            хозяйств и компаний, с которыми нас связывает долговременное
+            сотрудничество.
+          </li>
+          <li>
+            Доставка нашего мороженого до заказчиков осуществляется
+            в специальном термопакете, который не дает мороженому растаять
+            в пути и позволяет сохранить превосходный вкус.
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="layout-container">
-      <div class="layout-column-x2">
+      <div class="layout-column layout-column-x2">
         <div class="news">
           <h2>Новое в нашем блоге</h2>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </div>
       </div>
-      <div class="layout-column-x2">
+      <div class="layout-column layout-column-x2">
         <div class="newsletter">
           <div class="newsletter-content">
             <p>
@@ -205,25 +199,25 @@
 
     <footer class="main-footer">
       <div class="layout-container">
-        <div class="layout-column-x1">
-          <div class="footer-social-icons">
-            <a class="social-icon social-icon-twitter" href="#">Twitter</a>
-            <a class="social-icon social-icon-instagram" href="#">Instragram</a>
-            <a class="social-icon social-icon-facebook" href="#">Facebook</a>
-            <a class="social-icon social-icon-vkontakte" href="#">ВКонтакте</a>
+        <div class="layout-column layout-column-x1">
+          <div class="footer-socials">
+            <a class="icon-social icon-social-twitter" href="#">Twitter</a>
+            <a class="icon-social icon-social-instagram" href="#">Instragram</a>
+            <a class="icon-social icon-social-facebook" href="#">Facebook</a>
+            <a class="icon-social icon-social-vkontakte" href="#">ВКонтакте</a>
           </div>
         </div>
-        <div class="layout-column-x2">
+        <div class="layout-column layout-column-x2">
           <div class="footer-links">
             <ul>
-              <li><a class="heart-icon" href="#">Для поставщиков</a></li>
+              <li><a class="icon-heart" href="#">Для поставщиков</a></li>
               <li><a href="#">Наши документы</a></li>
               <li><a href="#">О производстве</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
           </div>
         </div>
-        <div class="layout-column-x1">
+        <div class="layout-column layout-column-x1">
           <div class="footer-copyright">
             <img src="img/logos/html-academy.svg" alt="HTML Academy">
             <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>

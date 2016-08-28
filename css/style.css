@@ -9,3 +9,34 @@ body {
   color: #ffffff;
   background-color: #849d8f;
 }
+
+.layout-container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.layout-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.layout-column {
+  float: left;
+  margin-right: 26px;
+}
+
+.layout-column-x1 {
+  width: 267px;
+}
+
+.layout-column-x2 {
+  width: 560px;
+}
+
+.layout-column-x1:nth-child(4n),
+.layout-column-x1 + .layout-column-x2 + .layout-column-x1,
+.layout-column-x2 + .layout-column-x2 {
+  margin-right: 0;
+}
