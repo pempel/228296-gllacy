@@ -167,17 +167,17 @@ body > input[name="slide"] {
   text-decoration: none;
 }
 
-.link span {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .link:hover,
 .link:active {
   color: #ffbc9e;
 }
 
-.link:hover span,
-.link:active span {
+.link-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link:hover .link-text,
+.link:active .link-text {
   border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
@@ -186,17 +186,17 @@ body > input[name="slide"] {
   text-decoration: none;
 }
 
-.link-opposite span {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
 .link-opposite:hover,
 .link-opposite:active {
   color: #e84d37;
 }
 
-.link-opposite:hover span,
-.link-opposite:active span {
+.link-opposite .link-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.link-opposite:hover .link-text,
+.link-opposite:active .link-text {
   border-bottom: 1px solid rgba(236, 89, 60, 0.3);
 }
 
@@ -378,14 +378,6 @@ body > input[name="slide"] {
   font-size: 16px;
   line-height: 24px;
 }
-
-/*.main-header {
-  margin-bottom: -10px;
-}
-
-.main-page .main-header {
-  margin-bottom: 0px;
-}*/
 
 .main-header .main-logo {
   float: left;
@@ -917,6 +909,8 @@ body > input[name="slide"] {
 }
 
 .ice-cream {
+  position: relative;
+
   float: left;
   width: 267px;
   margin-top: 0;
@@ -931,10 +925,18 @@ body > input[name="slide"] {
   margin-right: 0;
 }
 
+.ice-cream:hover .ice-cream-wrapper {
+  display: block;
+}
+
 .ice-cream-preview {
   position: relative;
 
   margin-bottom: 14px;
+}
+
+.ice-cream:hover .ice-cream-preview {
+  z-index: 10;
 }
 
 .ice-cream-preview-hit {
@@ -995,6 +997,37 @@ body > input[name="slide"] {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+}
+
+.ice-cream:hover .link-text {
+  border-bottom-style: none;
+}
+
+.ice-cream-wrapper {
+  position: absolute;
+  top: -6px;
+  bottom: -77px;
+  left: -13px;
+  z-index: 5;
+
+  display: none;
+  width: 293px;
+
+  background-color: rgba(248, 247, 244, 0.3);
+  border-radius: 5px;
+}
+
+.ice-cream-button-wrapper {
+  position: absolute;
+  bottom: 22px;
+  left: 0px;
+
+  width: 100%;
+}
+
+.ice-cream-button-wrapper .button {
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .about {
