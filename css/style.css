@@ -19,7 +19,7 @@ body > input[name="slide"] {
   background-color: #849d8f;
   background-image: url("../img/background.png");
   background-repeat: repeat-x;
-  background-position: left top;
+  background-position: 50% 0;
 }
 
 .site-wrapper::before,
@@ -260,6 +260,7 @@ body > input[name="slide"] {
   border-radius: 25px;
   box-sizing: border-box;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  cursor: pointer;
   outline: none;
 }
 
@@ -902,10 +903,6 @@ body > input[name="slide"] {
   background-image: url("../img/banner-chocolate.jpg");
 }
 
-.ice-creams {
-  margin-bottom: 60px;
-}
-
 .ice-creams::after {
   display: table;
   content: "";
@@ -936,7 +933,7 @@ body > input[name="slide"] {
 .ice-cream-preview {
   position: relative;
 
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 
 .ice-cream:hover .ice-cream-preview {
@@ -1186,7 +1183,6 @@ body > input[name="slide"] {
   position: relative;
 
   min-height: 430px;
-  margin-bottom: 35px;
   margin-left: -27px;
   margin-right: -27px;
 
@@ -1255,6 +1251,11 @@ body > input[name="slide"] {
 .map-contacts .button {
   padding-left: 27px;
   padding-right: 27px;
+}
+
+.pagination-wrapper {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .pagination-wrapper::after {
@@ -1339,6 +1340,8 @@ body > input[name="slide"] {
 
 .horizontal-line {
   height: 1px;
+  margin: 0;
+  margin-bottom: 4px;
 
   background-color: #ffffff;
   border-width: 0;
@@ -1346,12 +1349,20 @@ body > input[name="slide"] {
 }
 
 .main-footer {
-  padding-bottom: 25px;
+  min-height: 103px;
+}
+
+.footer-social-links {
+  margin-top: 36px;
+
+  font-size: 0;
+  line-height: 0;
 }
 
 .footer-links-list {
   width: 330px;
   margin: 0;
+  margin-top: 36px;
   margin-left: 107px;
   padding: 0;
 
@@ -1364,7 +1375,7 @@ body > input[name="slide"] {
 .footer-links-list-item {
   display: inline-block;
   width: 143px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   padding-left: 22px;
 
   vertical-align: top;
@@ -1377,7 +1388,7 @@ body > input[name="slide"] {
 
 .footer-links-list-item .link {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
 }
 
 .footer-links-list-item:first-child .link {
@@ -1388,7 +1399,7 @@ body > input[name="slide"] {
 
 .footer-links-list-item:first-child .link::before {
   position: absolute;
-  top: 0px;
+  top: 2px;
   left: -22px;
 
   content: "";
@@ -1400,7 +1411,7 @@ body > input[name="slide"] {
 }
 
 .footer-copyright {
-  margin-top: -15px;
+  margin-top: 20px;
   margin-left: 79px;
 }
 
@@ -1409,5 +1420,6 @@ body > input[name="slide"] {
   margin-right: -2px;
 
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
+  color: #fefefe;
 }
