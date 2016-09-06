@@ -18,8 +18,8 @@ body > input[name="slide"] {
 
   background-color: #849d8f;
   background-image: url("../img/background.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-repeat: repeat-x;
+  background-position: left top;
 }
 
 .site-wrapper::before,
@@ -1113,7 +1113,7 @@ body > input[name="slide"] {
   color: #323232;
 
   background-color: #ffffff;
-  background-image: url("../img/news.jpg");
+  background-image: url("../img/strawberry.jpg");
   border-radius: 15px;
 }
 
@@ -1146,7 +1146,7 @@ body > input[name="slide"] {
   color: #5a5a5a;
 
   background-color: #f8f7f4;
-  background-image: url("../img/newsletter.png");
+  background-image: url("../img/stripes.png");
   border-radius: 15px;
 }
 
