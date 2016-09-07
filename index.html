@@ -349,27 +349,26 @@
     </div>
 
     <div class="modal">
-      <div class="modal-content">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-        <h2 class="modal-content-header">Мы обязательно вам ответим!</h2>
-        <form class="form-feedback" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form-field">
-            <input type="text" name="feedback[name]" required>
-            <span class="placeholder">Как вас зовут?</span>
-          </div>
-          <div class="form-field">
-            <input type="text" name="feedback[email]" required>
-            <span class="placeholder">Ваша почта для ответа?</span>
-          </div>
-          <div class="form-field">
-            <textarea rows="5" name="feedback[comment]" required></textarea>
-            <span class="placeholder">Напишите что-нибудь...</span>
-          </div>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </div>
-      <div class="modal-overlay"></div>
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-header">Мы обязательно вам ответим!</h2>
+      <form class="form-feedback" method="post" action="https://echo.htmlacademy.ru">
+        <div class="form-field">
+          <input type="text" name="feedback[name]" required>
+          <span class="placeholder">Как вас зовут?</span>
+        </div>
+        <div class="form-field">
+          <input type="text" name="feedback[email]" required>
+          <span class="placeholder">Ваша почта для ответа?</span>
+        </div>
+        <div class="form-field">
+          <textarea rows="5" name="feedback[comment]" required></textarea>
+          <span class="placeholder">Напишите что-нибудь...</span>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </div>
+
+    <div class="overlay"></div>
 
     <script src="js/script.min.js"></script>
   </body>
